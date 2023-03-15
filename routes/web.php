@@ -15,29 +15,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-})->middleware(['auth', 'verified'])->name('contact');
-
-Route::get('/homepage', function () {
     return view('homepage');
-})->middleware(['auth', 'verified'])->name('homepage');
-
-Route::get('/media', function () {
-    return view('media');
-})->middleware(['auth', 'verified'])->name('media');
+})->name('homepage');
 
 Route::get('/projects', function () {
     return view('projects');
-})->middleware(['auth', 'verified'])->name('projects');
+})->name('projects');
+
+Route::get('/studentfirm', function () {
+    return view('studentfirm');
+})->name('studentfirm');
+
+Route::get('/cv', function () {
+    return view('cv');
+})->name('cv');
+
+Route::get('/õpitee', function () {
+    return view('õpitee');
+})->name('õpitee');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+}); 
+
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
 
 require __DIR__.'/auth.php';
