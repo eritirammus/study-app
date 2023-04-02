@@ -1,7 +1,7 @@
 <x-app-layout>
 
     <div class="py-12">
-        <div class="flex items-center max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center max-w-7xl mx-auto">
             <div class="bg-white divide-solid divide-y divide-slate-500 dark:bg-gray-800 shadow-sm sm:rounded-lg">
                 <div class="flex text-2xl justify-between text-left">
                     <img src="../../images/20220806_200504.jpg" class="m-8 w-96 h-96 rounded-full">
@@ -11,7 +11,7 @@
                             My experience this far has been focused on HTML & CSS, JavaScript, PHP and I'm constantly expanding my skill set by learning new technologies and frameworks.
                         </p>
                         <p> 
-                            I believe that a well-designed website can have a significant impact on a business's success, and I'm dedicated to delivering high-quality work that meets my client's needs. 
+                            I believe that a well-designed website can have a significant impact on a business's success,and I'm dedicated to delivering high-quality work that meets my client's needs. 
                             I'm driven by a desire to continuously improve and stay up-to-date with the latest developments in web development. 
                         </p>
                         <p>
@@ -54,18 +54,10 @@
             </div>
         </div>
     </div>
+    
     <!-- Responsive Home page -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="">
-            <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
-                {{ __('About me') }}
-            </x-nav-link>
-            <x-nav-link :href="route('projects')" :active="request()->routeIs('projects')">
-                {{ __('Projects') }}
-            </x-nav-link>
-            <x-nav-link :href="route('studentfirm')" :active="request()->routeIs('studentfirm')">
-                {{ __('Student Firm') }}
-            </x-nav-link>
         </div>
     </div>
 </x-app-layout>
