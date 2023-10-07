@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
-        <div class="flex items-center max-w-7xl mx-auto">
-            <div class="bg-white divide-solid divide-y divide-slate-500 dark:bg-gray-800 shadow-sm sm:rounded-lg">
-                <div class="flex text-2xl justify-between text-left">
-                    <img src="../../images/20220806_200504.jpg" class="m-8 w-80 h-80 rounded-full">
-                    <div class="p-5 space-y-4 dark:text-gray-100">
+    <div class="lg:py-12">
+        <div class="flex items-center lg:max-w-7xl mx-auto">
+            <div class="h-fit bg-white divide-solid divide-y divide-slate-500 dark:bg-gray-800 shadow-sm sm:rounded-lg">
+                <div class="flex flex-col lg:flex-row lg:text-2xl text-base justify-between text-left">
+                    <img src="../../images/20220806_200504.jpg" class="lg:m-8 lg:w-96 lg:h-96 h-64 w-full lg:rounded-lg object-cover">
+                    <div class="px-4 lg:pt-12 pt-4 space-y-4 dark:text-gray-100">
                         <p>
                             Hello! My name is Kevin, I'm a junior web developer with a passion for creating functional and visually appealing websites. 
                             My experience this far has been focused on HTML & CSS, JavaScript, PHP and I'm constantly expanding my skill set by learning new technologies and frameworks.
@@ -18,7 +18,7 @@
                         </p>       
                     </div>
                 </div>
-                    <div class="divide-solid divide-y divide-slate-500 mx-5 full">
+                    <div class="divide-solid divide-y divide-slate-500 lg:mx-5 lg:mt-0 mt-4 mx-4 full">
                         <div class="flex md:flex-row md:space-x-4 px-5 w-full">
                             <div class="flex w-full">
                                 <div class="flex justify-center text-2xl font-bold text-white min-w-full">
@@ -43,12 +43,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Responsive Home page -->
-    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="">
         </div>
     </div>
 </x-app-layout>
