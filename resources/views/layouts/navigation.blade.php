@@ -21,15 +21,6 @@
                     <x-nav-link :href="route('projects')" :active="request()->routeIs('projects')">
                         {{ __('Projects') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('studentfirm')" :active="request()->routeIs('studentfirm')">
-                        {{ __('Student Firm') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('cv')" :active="request()->routeIs('cv')">
-                        {{ __('CV') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('õpitee')" :active="request()->routeIs('õpitee')">
-                        {{ __('Õpitee') }}
-                    </x-nav-link>
                 </div>
             </div>
 
@@ -47,19 +38,11 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="">
-            <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
-                {{ __('About me') }}
-            </x-nav-link>
-            <x-nav-link :href="route('projects')" :active="request()->routeIs('projects')">
-                {{ __('Projects') }}
-            </x-nav-link>
-            <x-nav-link :href="route('studentfirm')" :active="request()->routeIs('studentfirm')">
-                {{ __('Student Firm') }}
-            </x-nav-link>
-            <x-nav-link :href="route('cv')" :active="request()->routeIs('cv')">
-                {{ __('CV') }}
-            </x-nav-link>
-        </div>
+        <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
+            {{ __('About me') }}
+        </x-nav-link>
+        <x-nav-link :href="route('projects')" :active="request()->routeIs('projects')">
+            {{ __('Projects') }}
+        </x-nav-link>
     </div>
 </nav>

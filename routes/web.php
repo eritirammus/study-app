@@ -22,18 +22,6 @@ Route::get('/projects', function () {
     return view('projects');
 })->name('projects');
 
-Route::get('/studentfirm', function () {
-    return view('studentfirm');
-})->name('studentfirm');
-
-Route::get('/cv', function () {
-    return view('cv');
-})->name('cv');
-
-Route::get('/õpitee', function () {
-    return view('õpitee');
-})->name('õpitee');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
