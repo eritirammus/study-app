@@ -4,10 +4,10 @@
             <div class="h-fit bg-white divide-solid divide-y divide-slate-500 dark:bg-gray-800 shadow-sm sm:rounded-lg">
                 <div class="flex flex-col lg:flex-row lg:text-2xl text-base justify-between text-left">
                     <img src="../../images/20220806_200504.jpg" class="lg:m-8 lg:w-96 lg:h-96 h-64 w-full lg:rounded-lg object-cover">
-                    <div class="px-4 lg:pt-12 pt-4 space-y-4 dark:text-gray-100">
+                    <div class="px-4 lg:pt-8 pt-4 space-y-4 dark:text-gray-100">
                         <p>
                             Hello! My name is Kevin, I'm a junior web developer with a passion for creating functional and visually appealing websites. 
-                            My experience this far has been focused on HTML & CSS, JavaScript, PHP and I'm constantly expanding my skill set by learning new technologies and frameworks.
+                            My experience this far has been focused on HTML & CSS, JavaScript, PHP and I'm constantly expanding my skill set by learning new technologies and frameworks such as Laravel, Tailwind and Electron.
                         </p>
                         <p> 
                             I believe that a well-designed website can have a significant impact on a business's success and I'm dedicated to delivering high-quality work that meets my client's needs. 
