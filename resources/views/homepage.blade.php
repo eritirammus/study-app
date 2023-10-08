@@ -3,7 +3,7 @@
         <div class="flex items-center lg:max-w-7xl mx-auto">
             <div class="h-fit bg-white divide-solid divide-y divide-slate-500 dark:bg-gray-800 shadow-sm sm:rounded-lg">
                 <div class="flex flex-col lg:flex-row lg:text-2xl text-base justify-between text-left">
-                    <img src="../../images/20220806_200504.jpg" class="lg:m-8 lg:w-96 lg:h-96 h-64 w-full lg:rounded-lg object-cover">
+                    <img src="../../images/IMG_0277.jpeg" class="lg:m-8 lg:w-96 lg:h-96 h-64 w-full lg:rounded-lg object-cover">
                     <div class="px-4 lg:pt-8 pt-4 space-y-4 dark:text-gray-100">
                         <p>
                             Hello! My name is Kevin, I'm a junior web developer with a passion for creating functional and visually appealing websites. 
